@@ -1,0 +1,16 @@
+@mixin flexbox($orientation, $wrap, $justify-content, $align-items) {
+  display: flex;
+  flex-flow: $orientation;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+.link {
+  cursor: pointer;
+}
+
+@mixin border-radius($val) {
+  -webkit-border-radius: $val;
+  -moz-border-radius: $val;
+  border-radius: $val;
+}

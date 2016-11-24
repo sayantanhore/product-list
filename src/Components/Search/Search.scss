@@ -1,0 +1,31 @@
+@import '../../common';
+$searchbox-border-color: rgba(135,136,137, 0.4);
+
+.div__search {
+  @include flexbox(row, nowrap, flex-start, center);
+  .label__pageheader {
+    font-size: 22px;
+  }
+  .div__searchbox {
+    background-color: #FFF;
+    border: 2px solid;
+    @include border-radius(3px);
+    border-color: $searchbox-border-color;
+    height: 24px;
+    margin: 0 1rem;
+    @include flexbox(row, nowrap, flex-start, center);
+    .input-text__search {
+      width: 7rem;
+      margin: 0 0.3rem;
+      font-size: 9px;
+      outline: none;
+      border: 0;
+    }
+    .img__search {
+      @extend .link;
+      margin: 0 0.2rem;
+      width: 0.8rem;
+      height: 0.8rem;
+    }
+  }
+}
