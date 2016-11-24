@@ -1,1 +1,2 @@
-console.log(13333)
+import data from '../data.js';
+
